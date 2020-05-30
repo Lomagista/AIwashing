@@ -1,0 +1,471 @@
+body{
+    background-color: #C3A4A4;
+}
+.Refresh{
+    position: fixed;
+    top: 2vh;
+    left: 2vw;
+    height: 2vw;
+    width: 2vw;
+    z-index: 2;
+}
+.RefreshButton{
+    border: 0; 
+    padding: 0;
+    background-color: transparent;
+    outline: none;
+    height: 2vw;
+    width: 2vw;
+    cursor: pointer;
+}
+.Refresh #RefreshButton{
+    transition-duration: 1.5s;
+    transition-timing-function: ease-in-out;
+}
+.Refresh .RefreshButton:hover #RefreshButton{
+    transform: rotate(720deg) scale(1.4);
+}
+.Refresh .RefreshButton:hover ~p #n{
+    animation-name: pop;
+    animation-duration: 0.05s;
+    animation-delay: 0.05s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.Refresh .RefreshButton:hover ~p #o{
+    animation-name: pop;
+    animation-duration: 0.1s;
+    animation-delay: 0.1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.Refresh .RefreshButton:hover ~p #t{
+    animation-name: pop;
+    animation-duration: 0.15s;
+    animation-delay: 0.15s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.Refresh .RefreshButton:hover ~p #h{
+    animation-name: pop;
+    animation-duration: 0.2s;
+    animation-delay: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.Refresh .RefreshButton:hover ~p #e{
+    animation-name: pop;
+    animation-duration: 0.25s;
+    animation-delay: 0.25s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.Refresh .RefreshButton:hover ~p #r{
+    animation-name: pop;
+    animation-duration: 0.3s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.Refresh .RefreshButton:hover ~p #dash{
+    animation-name: pop;
+    animation-duration: 0.35s;
+    animation-delay: 0.35s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.Refresh .RefreshButton:hover ~p #F{
+    animation-name: pop;
+    animation-duration: 0.4s;
+    animation-delay: 0.4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.Refresh .RefreshButton:hover ~p #a1{
+    animation-name: pop;
+    animation-duration: 0.45s;
+    animation-delay: 0.45s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.Refresh .RefreshButton:hover ~p #n1{
+    animation-name: pop;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.Refresh .RefreshButton:hover ~p #t1{
+    animation-name: pop;
+    animation-duration: 0.55s;
+    animation-delay: 0.55s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.Refresh .RefreshButton:hover ~p #a2{
+    animation-name: pop;
+    animation-duration: 0.6s;
+    animation-delay: 0.6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.Refresh .RefreshButton:hover ~p #s{
+    animation-name: pop;
+    animation-duration: 0.65s;
+    animation-delay: 0.65s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.Refresh .RefreshButton:hover ~p #y{
+    animation-name: pop;
+    animation-duration: 0.7s;
+    animation-delay: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.Refresh .RefreshButton:hover ~p #qmark{
+    animation-name: pop;
+    animation-duration: 0.75s;
+    animation-delay: 0.75s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes pop{
+    to{
+        font-size: 2.5vh;
+    }
+}
+.Refresh p{
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 3vw;
+    height: 2vh;
+    width: 100vw;
+    line-height: 2vw;
+    font-size: 1.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.Refresh p #a{
+    font-size: 4vh;
+    font-weight: bolder;
+}
+.AIcon{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: -15vw;
+    top: 10vh;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
+    transform: translateZ(0)
+}
+.Front{
+    position: absolute;
+    left: -1vw;
+    height: 100vh;
+    width: 100vw;
+}
+#BuilderFront{
+    position: absolute;
+    top: -2vh;
+    left: 0;
+    opacity: 0;
+    animation-duration: 0.4s;
+    animation-delay: 1s;
+    animation-name: drop;
+    animation-timing-function: cubic-bezier(.29,.98,.75,1.2);
+    animation-fill-mode: forwards;
+}
+@keyframes drop{
+    from{
+        opacity: 0;
+        top: -16vh;
+    }
+    to{
+        opacity: 1;
+        top: 0;
+    }
+}
+.AFront{
+    stroke-dasharray: 7118;
+    stroke-dashoffset: 7118;
+    animation-duration: 2.5s;
+    animation-name: dash;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 1.25s;
+    opacity: 0;
+} 
+.IFront{
+    stroke-width: 7px;
+    stroke-dasharray: 7118;
+    stroke-dashoffset: 7118;
+    animation-duration: 2.5s;
+    animation-name: dash;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 1.25s;
+    opacity: 0;
+} 
+@keyframes dash{
+    0%{
+        stroke-dashoffset: 7118;
+         fill-opacity: 0;
+         opacity: 1;
+    }
+    90%{
+        stroke-dashoffset: 3000;
+        fill-opacity: 0;
+        opacity: 1;
+    }
+    100%{
+        stroke-dashoffset: 0;
+        fill: #b79191;
+        fill-rule: evenodd;
+        fill-opacity: 1;
+        opacity: 1;
+    }
+}
+#BuilderCircle{
+    stroke-dasharray: 50;
+    stroke: white;
+    stroke-width: 7px;
+    animation-name:round;
+    animation-duration: 3.75s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes round{
+    90%{
+        stroke-dashoffset: 1000;
+        stroke-dasharray: 50;
+        stroke-opacity: 1;
+        stroke: white;
+    }
+    98%{
+        stroke-dashoffset: 1000;
+        stroke-dasharray: 50;
+        stroke-opacity: 0;
+        stroke: white;
+    }
+    100%{
+        stroke: #af4a73;
+        stroke-dashoffset: 0;
+        stroke-opacity: 1;
+        stroke-dasharray: 0;
+    }
+}
+#AIconBack{
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+#BuilderBack{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#Back{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    opacity: 1;
+}
+#B{
+    opacity: 0;
+}
+.Suggest{
+    position: fixed;
+    top: 2vh;
+    left: 75vw;
+    text-align: center;
+    font-size: 1.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #b79191;
+}
+.Suggest:hover{
+    color: white;
+}
+.Bullshit{
+    position: relative;
+    padding-top: 60vh;
+    padding-left: 4.5vw;
+    width: 60vw;
+    height: 80vh;
+    text-align: left;
+    font-size: 5.9vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+.Bullshit .S1{
+    font-size: 7.5vh;
+}
+#Illustration{
+    position: relative;
+    padding-left: 4.75vw;
+    padding-top: 25vh;
+    width: 60vw;
+    opacity: 1;
+}
+#FakeWindow{   
+    width: 50vw;
+    height: auto;
+    padding-bottom: 10vh;
+}
+#Window{
+    position: relative;
+}
+#CFO-1{
+    position: absolute;
+    width: 17vw;
+    height: auto;
+    left: 55vw;
+    top: 165vh;
+}
+#TrueDecFront{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+.TrueDecBack{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+#CF-1{
+    position: absolute;
+    width: 80vw;
+    left: 10vw;
+    top: 100vh;
+    opacity: 0;
+}
+#RoundBoom{
+    position: absolute;
+    top: 2vh;
+    left: 55vw;
+    width: 50vw;
+    height: 50vh;
+    opacity: 0;
+}
+#WeDo{
+    position: absolute;
+    top: 19vh;
+    left: -10vw;
+    width: 40vw;
+    height: 20vh;
+    opacity: 0;
+}
+#AI{
+    position: absolute;
+    top: 34vh;
+    left: 100vw;
+    opacity: 0;
+}
+#Washing{
+    position: absolute;
+    top: 50vh;
+    left: 126.5vw;
+    opacity: 0;
+}
+.For{
+    position: absolute;
+    left: 4.75vw;
+    top: 100vh;
+    width: 50vw;
+    opacity: 0;
+}
+.X75000{
+    position: absolute;
+    left: 20vw;
+    top: 100vh;
+    opacity: 0;
+}
+#ForBorder{
+    position: absolute;
+    left: 5vw;
+    top: 68vh;
+    width: 50vw;
+    stroke-width: 0.2px;
+    z-index: -1;
+    opacity: 0;
+}
+#X75000Border{
+    position: absolute;
+    left: 19.75vw;
+    top: 77vh;
+    z-index: -1;
+    opacity: 0;
+}
+.Click{
+    position: absolute;
+    left: 68vw;
+    top: 216.5vh;
+    width: 25vw;
+    text-align: left;
+    font-size: 3.5vh;
+    font-weight: bold;
+    color: white;
+    border: 0; 
+    padding: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    z-index: 2;
+}
+#CF-2{
+    left: 2vw;
+    top: 120vh;
+}
+#CF-3{
+    left: 2vw;
+    top: 165vh;
+}
+#CF-4{
+    left: 2vw;
+    top: 210vh;
+}
+#CF-5{
+    left: 28vw;
+    top: 120vh;
+}
+#CF-6{
+    left: 28vw;
+    top: 165vh;
+}
+#CF-7{
+    left: 28vw;
+    top: 210vh;
+}
+#CF-8{
+    left: 55vw;
+    top: 120vh;
+}
+#CF-9{
+    left: 55vw;
+    top: 210vh;
+}
+#CF-10{
+    left: 82vw;
+    top: 120vh;
+}
+#CF-11{
+    left: 82vw;
+    top: 165vh;
+}
+#CF-12{
+    left: 82vw;
+    top: 210vh;
+}
