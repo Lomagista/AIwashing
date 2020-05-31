@@ -1,5 +1,7 @@
 body{
     background-color: #C3A4A4;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
 }
 .Refresh{
     position: fixed;
@@ -7,7 +9,7 @@ body{
     left: 2vw;
     height: 2vw;
     width: 2vw;
-    z-index: 2;
+    z-index: 4;
 }
 .RefreshButton{
     border: 0; 
@@ -287,6 +289,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #b79191;
+    z-index: 4;
 }
 .Suggest:hover{
     color: white;
@@ -313,6 +316,7 @@ body{
     padding-top: 25vh;
     width: 60vw;
     opacity: 1;
+    z-index: 3;
 }
 #FakeWindow{   
     width: 50vw;
@@ -335,7 +339,7 @@ body{
     top: 0;
     height: 100vh;
     width: 100vw;
-    z-index: 1;
+    z-index: 2;
 }
 .TrueDecBack{
     position: fixed;
@@ -389,7 +393,7 @@ body{
 }
 .X75000{
     position: absolute;
-    left: 20vw;
+    left: 8.5vw;
     top: 100vh;
     opacity: 0;
 }
@@ -468,4 +472,110 @@ body{
 #CF-12{
     left: 82vw;
     top: 210vh;
+}
+#Reset{
+    position: absolute;
+    left: 78vw;
+    top: 82vh;
+    transform: scale(0.8);
+    transform-origin: right bottom;
+    opacity: 0;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+#Info{
+    position: absolute;
+    left: 2vw;
+    top: 90vh;
+    opacity: 0;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    transform-origin: left bottom;
+}
+#InfoContent{
+    position: fixed;
+    left: -30vw;
+    top: 0;
+    height:100vh;
+    width: 30vw;
+    background-color: rgba(13, 12, 54, 0.85);
+    opacity: 0;
+}
+.Words{
+    position: relative;
+    left: 2.5vw;
+    top: 10vh;
+    width: 25vw;
+    height: 80vh;
+}
+#Hide{
+    position: relative;
+    left: 2vw;
+    top: 10vh;
+    transform: scale(0.95);
+    transform-origin: left top;
+    cursor: pointer;
+}
+#Title1{
+    font-size: 2vw;
+    font-family: 'Bodoni MT Black', 'Arial Narrow', Arial, sans-serif;
+    color: #FF005E;
+    margin-top: 0;
+    margin-bottom: 1vw;
+}
+#Slash{
+    font-size: 2vw;
+    font-family: 'Bodoni MT Black', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin: 0;
+}
+#Title2{
+    font-size: 2vw;
+    font-family: 'Bodoni MT Black', 'Arial Narrow', Arial, sans-serif;
+    color: #99FF00;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+#AI75000{
+    font-size: 1vw;
+    font-family: 'Bodoni MT Black', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin: 0;
+}
+#Title3{
+    font-size: 1vw;
+    font-family: 'Bodoni MT Black', 'Arial Narrow', Arial, sans-serif;
+    color: #FFDF00;
+}
+#concept{
+    font-size: 0.65vw;
+    font-family: 'Bodoni MT Black', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+#Title4{
+    font-size: 1vw;
+    font-family: 'Bodoni MT Black', 'Arial Narrow', Arial, sans-serif;
+    color: #00DCFF;
+}
+#AIW{
+    font-size: 0.65vw;
+    font-family: 'Bodoni MT Black', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+#PizzaMake{
+    font-size: 1vw;
+    font-family: 'Bodoni MT Black', 'Arial Narrow', Arial, sans-serif;
+    color: #99FF00;
+}
+#human{
+    font-size: 1.2vw;
+    font-family: 'Bodoni MT Black', 'Arial Narrow', Arial, sans-serif;
+    color: #FF005E;
+}
+#arti{
+    font-size: 1.2vw;
+    font-family: 'Bodoni MT Black', 'Arial Narrow', Arial, sans-serif;
+    color: #FF005E;
 }

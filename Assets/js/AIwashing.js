@@ -14,6 +14,14 @@ Refresh.addEventListener('mouseover', function(){
         easing: 'easeOutQuad'
     });
 });
+Refresh.addEventListener('mouseout', function(){
+    anime({
+        targets: ".cls-1s",
+        d: RefreshOriginal,
+        duration: 500,
+        easing: 'easeOutQuad'
+    });
+});
 
 const Surprise = document.querySelector(".Click");
 Surprise.addEventListener('click', function(){
@@ -607,9 +615,71 @@ Surprise.addEventListener('click', function(){
             delay: 4000
          });
     };
+    anime({
+        targets: '#Reset',
+        opacity: 1,
+        duration: 500,
+        delay: 4000,
+        easing: 'easeInQuad',
+    })
+    anime({
+        targets: '#Info',
+        opacity: 1,
+        duration: 500,
+        delay: 4000,
+        easing: 'easeInQuad'
+    })
 });
 
-const Ear1 = "M-532.174,1400.1c143.475,43.84,1081.378-348.06,1231.5-457S396.43,483.455,179.888,456.885s-216.542,6.642-320.162,75.723S37.742,730.551,101.509,799.632-665.021,1320.394-532.174,1400.1Z"
+let Info = document.querySelector('#Info');
+Info.addEventListener('click', function(){
+    anime({
+        targets: '#Info',
+        left: 32+'vw',
+        opacity: 0,
+        duration: 500,
+        easing: 'linear'
+    })
+    anime({
+        targets: '#InfoContent',
+        left: 0+'vw',
+        opacity: 1,
+        duration: 500,
+        easing: 'linear'
+    })
+});
+let Hide = document.querySelector('#Hide');
+Hide.addEventListener('click', function(){
+    anime({
+        targets: '#Info',
+        left: 2+'vw',
+        opacity: 1,
+        duration: 500,
+        easing: 'linear'
+    })
+    anime({
+        targets: '#InfoContent',
+        left: -30+'vw',
+        opacity: 0,
+        duration: 500,
+        easing: 'linear'
+    })
+});
+
+let randomHexColour = function(){
+    const hexLetters = '0123456789ABCDEF';
+    let colour = '#';
+    for( let i = 0; i < 6; i++ ){
+      colour += hexLetters[ Math.floor( Math.random() * 16 ) ];
+    }
+    return colour;
+}
+const Reset = document.querySelector('#Reset');
+const body = document.querySelector('body');
+Reset.addEventListener('click', function(){
+    body.style.backgroundColor = randomHexColour();
+}
+);
 
 let pathA = document.querySelector('.AFront');
 const length1 = pathA.getTotalLength();
