@@ -318,20 +318,25 @@ body{
     opacity: 1;
     z-index: 3;
 }
-#FakeWindow{   
-    width: 50vw;
-    height: auto;
-    padding-bottom: 10vh;
+#Window1{
+    position: relative;
+    top: 0;
 }
-#Window{
+#Window2{
+    position: relative;
+}
+#Window3{
+    position: relative;
+}
+#Window4{
     position: relative;
 }
 #CFO-1{
     position: absolute;
     width: 17vw;
     height: auto;
-    left: 55vw;
-    top: 165vh;
+    left: 47vw;
+    top: 177vh;
 }
 #TrueDecFront{
     position: fixed;
@@ -414,9 +419,9 @@ body{
     opacity: 0;
 }
 .Click{
-    position: absolute;
+    position: fixed;
     left: 68vw;
-    top: 216.5vh;
+    top: 85vh;
     width: 25vw;
     text-align: left;
     font-size: 3.5vh;
@@ -427,51 +432,138 @@ body{
     background-color: transparent;
     outline: none;
     cursor: pointer;
+    z-index: 4;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    opacity: 0;
+}
+.Select{
+    position: fixed;
+    margin: 0;
+    left: 68vw;
+    top: 80vh;
+    width: 25vw;
+    text-align: left;
+    font-size: 3.5vh;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: 0; 
+    padding: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
     z-index: 2;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    opacity: 0;
+}
+.Pick{
+    position: fixed;
+    margin: 0;
+    left: 68vw;
+    top: 80vh;
+    width: 25vw;
+    text-align: left;
+    font-size: 3.5vh;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: 0; 
+    padding: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    z-index: 2;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    opacity: 0;
+}
+.Choose{
+    position: fixed;
+    margin: 0;
+    left: 68vw;
+    top: 80vh;
+    width: 25vw;
+    text-align: left;
+    font-size: 3.5vh;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: 0; 
+    padding: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    z-index: 2;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    opacity: 0;
+}
+.See{
+    position: fixed;
+    margin: 0;
+    left: 68vw;
+    top: 80vh;
+    width: 25vw;
+    text-align: left;
+    font-size: 3.5vh;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: 0; 
+    padding: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    z-index: 2;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    opacity: 0;
 }
 #CF-2{
     left: 2vw;
-    top: 120vh;
+    top: -15vh;
 }
 #CF-3{
     left: 2vw;
-    top: 165vh;
+    top: 36vh;
 }
 #CF-4{
     left: 2vw;
-    top: 210vh;
+    top: 87vh;
 }
 #CF-5{
     left: 28vw;
-    top: 120vh;
+    top: -15vh;
 }
 #CF-6{
     left: 28vw;
-    top: 165vh;
+    top: 36vh;
 }
 #CF-7{
     left: 28vw;
-    top: 210vh;
+    top: 87vh;
 }
 #CF-8{
     left: 55vw;
-    top: 120vh;
+    top: -15vh;
 }
 #CF-9{
     left: 55vw;
-    top: 210vh;
+    top: 87vh;
 }
 #CF-10{
     left: 82vw;
-    top: 120vh;
+    top: -15vh;
 }
 #CF-11{
     left: 82vw;
-    top: 165vh;
+    top: 36vh;
 }
 #CF-12{
     left: 82vw;
-    top: 210vh;
+    top: 87vh;
 }
 #Reset{
     position: absolute;
@@ -493,6 +585,7 @@ body{
     transition-duration: 0.2s;
     transition-timing-function: ease-in;
     transform-origin: left bottom;
+    z-index: 4;
 }
 #InfoContent{
     position: fixed;
@@ -578,4 +671,23 @@ body{
     font-size: 1.2vw;
     font-family: 'Bodoni MT Black', 'Arial Narrow', Arial, sans-serif;
     color: #FF005E;
+}
+#Blank1{
+    width: 100%;
+    height: 50vh;
+}
+#Blank2{
+    width: 100%;
+    height: 50vh;
+}
+#Blank3{
+    width: 100%;
+    height: 50vh;
+}
+#FaceClone{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vw;
+    width: 100vh;
 }

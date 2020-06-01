@@ -416,19 +416,88 @@ Surprise.addEventListener('click', function(){
         delay: 500
     });
     anime({
-        targets: '#Window',
-        top: 10+'vh',
+        targets: "#CFO-1",
+        left: 55.5+"vw",
+        easing: 'easeInOutQuad',
+        duration: 500
+    })
+    anime({
+        targets: '#Window1',
+        opacity: 0,
+        easing: 'easeInOutQuad',
+        duration: 500
+    });
+    anime({
+        targets: '#Window2',
+        opacity: 0,
+        easing: 'easeInOutQuad',
+        duration: 500
+    });
+    anime({
+        targets: '#Window3',
+        opacity: 0,
+        easing: 'easeInOutQuad',
+        duration: 500
+    });
+    anime({
+        targets: '#Window4',
+        top: 100+"vh",
         opacity: 0,
         easing: 'easeInOutQuad',
         duration: 500
     });
     anime({
         targets: '.Click',
-        top: 226.5+'vh',
+        top: 100+'vh',
+        easing: 'easeInOutQuad',
+        duration: 500
+    });
+    anime({
+        targets: '.Click',
         opacity: 0,
         easing: 'easeInOutQuad',
         duration: 500
     });
+    anime({
+        targets: '.See',
+        opacity: 0,
+        top: 100+'vh',
+        easing: 'easeInOutQuad',
+        duration: 500
+    });
+    anime({
+        targets: '.Select',
+        top: 100+'vh',
+        easing: 'easeInOutQuad',
+        duration: 500
+    });
+    anime({
+        targets: '.Choose',
+        top: 100+'vh',
+        easing: 'easeInOutQuad',
+        duration: 500
+    });
+    anime({
+        targets: '.Pick',
+        top: 100+'vh',
+        easing: 'easeInOutQuad',
+        duration: 500
+    });
+    anime({
+        targets: '#FaceClone',
+        top: -150+"vh",
+        opacity: 0,
+        easing: 'easeInOutQuad',
+        duration: 1000,
+        delay: 2500
+    })
+    anime({
+        targets: "#CFO-1",
+        top: -150+"vh",
+        easing: 'easeInOutQuad',
+        duration: 1000,
+        delay: 2500
+    })
     let originalFace = document.getElementById('CF-1');
     console.log(originalFace);
     for(let i=2; i<13; i++){
@@ -438,7 +507,7 @@ Surprise.addEventListener('click', function(){
         cloneFace.style.width = "18vw";
         cloneFace.style.height = "18vw";
         cloneFace.style.opacity = "0";
-        document.getElementById('Illustration').appendChild(cloneFace);
+        document.getElementById('FaceClone').appendChild(cloneFace);
         };
     anime({
         targets: '#CF-2',
@@ -701,7 +770,7 @@ for(let i=0; i<10; i++){
     clone.style.height = "100%";
     clone.style.opacity = "0";
     document.getElementById('Back').appendChild(clone);
-    }
+}
 
 setTimeout(
     function(appear){
@@ -715,13 +784,19 @@ setTimeout(
             easing: 'easeInQuad',
             duration: 1000
         });
-    }}, 3750);
+}}, 3750);
 
 
 let Bullshit = document.querySelector(".Bullshit");
 let FakeWindow = document.querySelector("#Illustration");
 let WindowBack = document.querySelector("#Window");
+let CFO = document.querySelector("#CFO-1");
 let AIcon = document.querySelector(".AIcon");
+let Select = document.querySelector(".Select");
+let Pick = document.querySelector(".Pick");
+let Choose = document.querySelector(".Choose");
+let See = document.querySelector(".See");
+let Click = document.querySelector(".Click");
 window.addEventListener('scroll', function(){
     const htmlBounds = $html.getBoundingClientRect();
     const maxScroll = htmlBounds.height - window.innerHeight;
@@ -731,7 +806,7 @@ window.addEventListener('scroll', function(){
     console.log(scrollPercent);
     const shitBounds = Bullshit.getBoundingClientRect();
     const shitTop = shitBounds.top;
-    if(scrollPercent>38.45){
+    if(scrollPercent>9.752){
         Bullshit.style.position = "fixed";
         Bullshit.style.padding = "0";
         Bullshit.style.left = "4.8vw";
@@ -750,5 +825,48 @@ window.addEventListener('scroll', function(){
         FakeWindow.style.paddingTop = "25vh";
         AIcon.style.transform = "scale(1) translateX(0)";
         AIcon.style.transformOrigin = "top right";
+    }
+    if(scrollPercent>27.411){
+        CFO.style.position = "fixed";
+        CFO.style.top = "34vh";
+        CFO.style.left = "47.3vw";
+    }
+    else{
+        CFO.style.position = "absolute";
+        CFO.style.top = "177vh";
+        CFO.style.left = "47vw";
+        Select.style.opacity = 0;
+    }
+    if(scrollPercent>15.389){
+        Select.style.opacity = 1;
+    }
+    if(scrollPercent>44.0901){
+        Select.style.opacity = 0;
+    }
+    if(scrollPercent>51.411){
+        Pick.style.opacity = 1;
+    }
+    else{
+        Pick.style.opacity = 0;
+    }
+    if(scrollPercent>68.2804){
+        Pick.style.opacity = 0;
+    }
+    if(scrollPercent>75.792){
+        Choose.style.opacity = 1;
+    }
+    else{
+        Choose.style.opacity = 0;
+    }
+    if(scrollPercent>92.397){
+        Choose.style.opacity = 0;
+    }
+    if(scrollPercent>99.909){
+        See.style.opacity = 1;
+        Click.style.opacity = 1;
+    }
+    else{
+        See.style.opacity = 0;
+        Click.style.opacity = 0;
     }
 })
